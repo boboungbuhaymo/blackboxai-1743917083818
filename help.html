@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code & Conquer - How to Play</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <header class="bg-black bg-opacity-50 p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">How to Play</h1>
+        <a href="index.html" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg">
+            <i class="fas fa-home mr-2"></i>Back to Menu
+        </a>
+    </header>
+
+    <main class="container mx-auto p-4 max-w-4xl">
+        <section class="bg-gray-800 p-6 rounded-lg mb-6">
+            <h2 class="text-xl font-semibold mb-4 text-blue-400">Game Basics</h2>
+            <p class="mb-4">Code & Conquer is a turn-based strategy game where you control units by writing simple commands.</p>
+            
+            <div class="grid md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="font-semibold text-yellow-400 mb-2">Command Types</h3>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li><code class="text-blue-400">move(steps, direction)</code> - Move your unit</li>
+                        <li><code class="text-red-400">attack()</code> - Attack adjacent enemies</li>
+                        <li><code class="text-yellow-400">wait()</code> - Skip a turn</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="font-semibold text-green-400 mb-2">Examples</h3>
+                    <div class="font-mono text-sm space-y-1">
+                        <p class="text-blue-400">move(2, "right")</p>
+                        <p class="text-blue-400">move(1, "up")</p>
+                        <p class="text-red-400">attack()</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-800 p-6 rounded-lg mb-6">
+            <h2 class="text-xl font-semibold mb-4 text-purple-400">Drag & Drop Coding</h2>
+            <p class="mb-4">You can drag commands from the panel into the code editor:</p>
+            <div class="flex justify-center mb-4">
+                <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Drag and drop example" class="rounded-lg max-w-full h-auto border border-gray-600">
+            </div>
+            <ol class="list-decimal pl-5 space-y-2">
+                <li>Click and hold a command button</li>
+                <li>Drag it to the code editor</li>
+                <li>Release to insert the command</li>
+            </ol>
+        </section>
+
+        <section class="bg-gray-800 p-6 rounded-lg">
+            <h2 class="text-xl font-semibold mb-4 text-green-400">Game Objectives</h2>
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <div class="bg-yellow-600 p-2 rounded-lg mr-3">
+                        <i class="fas fa-chess-king text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Defeat Enemies</h3>
+                        <p class="text-gray-300">Use attack commands to eliminate enemy units</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-600 p-2 rounded-lg mr-3">
+                        <i class="fas fa-flag text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Reach Objectives</h3>
+                        <p class="text-gray-300">Move to specific tiles to complete levels</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-red-600 p-2 rounded-lg mr-3">
+                        <i class="fas fa-heart text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Survive</h3>
+                        <p class="text-gray-300">Avoid hazards and enemy attacks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black bg-opacity-30 text-white text-center p-4 mt-8">
+        <p>© 2023 Code & Conquer | Strategy meets programming</p>
+    </footer>
+</body>
+</html>
